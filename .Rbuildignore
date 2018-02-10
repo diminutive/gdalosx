@@ -1,3 +1,7 @@
 ^gdalosx\.Rproj$
 ^\.Rproj\.user$
 ^sim$
+^\.travis\.yml$
+^codecov\.yml$
+^README\.Rmd$
+^appveyor\.yml$
