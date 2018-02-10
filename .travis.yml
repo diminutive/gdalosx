@@ -36,7 +36,10 @@ matrix:
 before_install:
   - cd
   - wget http://download.osgeo.org/gdal/2.2.3/gdal-2.2.3.tar.gz
+  - wget http://download.osgeo.org/gdal/2.2.3/gdalautotest-2.2.3.tar.gz
   - tar zxf gdal-2.2.3.tar.gz
+  - tar zxf gdalautotest-2.2.3.tar.gz
+  - mv gdalautotest-2.2.3 autotest
   - ./gdal-2.2.3/ci/travis/${BUILD_NAME}/before_install.sh
 
 install:
