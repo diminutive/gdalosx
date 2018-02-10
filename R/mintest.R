@@ -7,7 +7,7 @@
 #' @export
 #'
 #' @examples
-#' mintest()
+#' #mintest()
 mintest <- function() {
   system("gdalinfo --version", intern = TRUE)
 }
