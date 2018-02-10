@@ -39,11 +39,12 @@ before_install:
   - wget http://download.osgeo.org/gdal/2.2.3/gdalautotest-2.2.3.tar.gz
   - tar zxf gdal-2.2.3.tar.gz
   - tar zxf gdalautotest-2.2.3.tar.gz
+  - mv gdal-2.2.3 gdal
   - mv gdalautotest-2.2.3 autotest
-  - ./gdal-2.2.3/ci/travis/${BUILD_NAME}/before_install.sh
+  - ./gdal/ci/travis/${BUILD_NAME}/before_install.sh
 
 install:
-  - ./gdal2.2.3/ci/travis/${BUILD_NAME}/install.sh
+  - ./gdal/ci/travis/${BUILD_NAME}/install.sh
 
 ## don't run the tests, MDSumner Feb 2018
 #script:
