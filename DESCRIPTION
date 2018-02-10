@@ -9,3 +9,4 @@ LazyData: true
 ByteCompile: true
 Suggests: 
     covr
+RoxygenNote: 6.0.1

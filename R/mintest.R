@@ -9,5 +9,5 @@
 #' @examples
 #' mintest()
 mintest <- function() {
-  system("gdalinfo --version", intern = TRUE, show.output.on.console = TRUE)
+  system("gdalinfo --version", intern = TRUE)
 }
