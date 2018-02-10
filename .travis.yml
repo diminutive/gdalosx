@@ -1,0 +1,43 @@
+# This is the config file for building GDAL and running its autotest suite
+# with Travis-ci.org
+
+language: r
+cache: packages
+
+matrix:
+  fast_finish: true
+  include:
+    - os: linux
+      compiler: clang
+      language: cpp
+      sudo: required
+      dist: trusty
+      cache:
+        apt: true
+        directories:
+          - $HOME/.ccache
+      env:
+        - BUILD_NAME=trusty_clang
+        - DETAILS="optimized build, no libtool"
+    - osx_image: xcode8
+      language: objective-c
+      compiler: clang
+      cache:
+        apt: true
+        directories:
+          - $HOME/.ccache
+      env:
+        - BUILD_NAME=osx
+        - DETAILS="debug build, libtool"
+
+before_install:
+  - cd
+  - wget http://download.osgeo.org/gdal/2.2.3/gdal-2.2.3.tar.gz
+  - tar zxf gdal-2.2.3.tar.gz
+  - ./gdal-2.2.3/ci/travis/${BUILD_NAME}/before_install.sh
+
+install:
+  - ./gdal2.2.3/ci/travis/${BUILD_NAME}/install.sh
+
+script:
+  - ./gdal2.2.3/ci/travis/${BUILD_NAME}/script.sh
