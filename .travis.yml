@@ -42,9 +42,13 @@ before_install:
   #- tar zxf gdalautotest-2.2.3.tar.gz
   #- mv gdal-2.2.3 gdal
   #- mv gdalautotest-2.2.3 autotest
+  cd gdal
+  git checkout tags/2.2.3
+  cd
   mv gdal gdal_go
   mv gdal_go/gdal .
   mv gdal_go/autotest .
+
   - ./gdal/ci/travis/${BUILD_NAME}/before_install.sh
 
 install:
