@@ -48,7 +48,7 @@ install:
 
 ## don't run the tests, MDSumner Feb 2018
 #script:
-#  - ./gdal2.2.3/ci/travis/${BUILD_NAME}/script.sh
+  - ./gdal/ci/travis/${BUILD_NAME}/script.sh
 
 after_success:
     - Rscript -e 'covr::codecov()'
