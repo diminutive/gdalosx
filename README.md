@@ -1,6 +1,6 @@
 
 <!-- README.md is generated from README.Rmd. Please edit that file -->
-[![Build Status](http://badges.herokuapp.com/travis/dis-organization/gdalosx?branch=master&env=BUILD_NAME=trusty_clang&label=trusty_clang)](https://travis-ci.org/dis-organization/gdalosx) [![Build Status](http://badges.herokuapp.com/travis/dis-organization/gdalosx?branch=master&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/dis-organization/gdalosx) [![Coverage status](https://codecov.io/gh/dis-organization/gdalosx/branch/master/graph/badge.svg)](https://codecov.io/github/dis-organization/gdalosx?branch=master)[![AppVeyor Build Status](https://ci.appveyor.com/dis-organization/gdalosx)](https://ci.appveyor.com/api/projects/status/github/dis-organization/gdalosx?branch=master&svg=true)
+[![Build Status](http://badges.herokuapp.com/travis/dimunitive/gdalosx?branch=master&env=BUILD_NAME=trusty_clang&label=trusty_clang)](https://travis-ci.org/dimunitive/gdalosx) [![Build Status](http://badges.herokuapp.com/travis/dimunitive/gdalosx?branch=master&env=BUILD_NAME=osx_release&label=osx_release)](https://travis-ci.org/dimunitive/gdalosx) [![Coverage status](https://codecov.io/gh/dimunitive/gdalosx/branch/master/graph/badge.svg)](https://codecov.io/github/dimunitive/gdalosx?branch=master)[![AppVeyor Build Status](https://ci.appveyor.com/dis-organization/gdalosx)](https://ci.appveyor.com/api/projects/status/github/dis-organization/gdalosx?branch=master&svg=true)
 
 gdalosx
 =======

@@ -42,7 +42,7 @@ before_install:
   - cd
   - git clone https://github.com/OSGeo/gdal.git
   - cd gdal
-  - git checkout tags/2.2.3
+  #- git checkout tags/2.2.3
   - cd
   ## put the /gdal and /autotest at this location
   - mv gdal gdal_go
