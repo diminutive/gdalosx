@@ -4,6 +4,9 @@ language: r
 cache: packages
 
 
+#r:
+#  - release
+
 # This is the config file for building GDAL and running its autotest suite
 # with Travis-ci.org
 
@@ -50,8 +53,8 @@ before_install:
 install:
   - ./gdal/ci/travis/${BUILD_NAME}/install.sh
 
-script:
-  - ./gdal/ci/travis/${BUILD_NAME}/script.sh
+#script:
+  #- ./gdal/ci/travis/${BUILD_NAME}/script.sh
 
 after_success:
     - Rscript -e 'covr::codecov()'

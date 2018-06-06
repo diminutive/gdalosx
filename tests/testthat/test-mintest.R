@@ -6,4 +6,4 @@ test_that("minimal R test works", {
 
 test_that("minimal gdalinfo test works",
           expect_true(grepl("^GDAL", gdalinfotest()))
-          )
+)

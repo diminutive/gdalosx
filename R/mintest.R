@@ -7,10 +7,11 @@
 #' @export
 #'
 gdalinfotest <- function() {
-  if (Sys.info()["sysname"]) {
+  if (Sys.info()["sysname"] %in% c("Linux", "Darwin")) {
     out <-   system("gdalinfo --version", intern = TRUE)
+  } else {
+    out <- NA
   }
-  out <- "GDAL"
   out
 }
 
