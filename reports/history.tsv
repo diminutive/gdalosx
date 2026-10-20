@@ -1,0 +1,3 @@
+date	label	macos	R	sf	gdal_sf	gdal_terra	gdal_gdalraster	gdal_vapour	proj_sf	geos_sf	n_drivers	recipe_gdal	recipe_proj	recipe_geos
+2026-10-20	arm64	26.6.2	4.6.1	1.1.3	3.8.5	3.8.5	3.8.5	3.8.5	9.5.1	3.13.0	206	3.8.5	9.5.1	3.14.1
+2026-10-20	x86_64	15.7.9	4.6.1	1.1.3	3.8.5	3.8.5	3.8.5	3.8.5	9.5.1	3.14.1	206	3.10.1	9.5.1	3.14.1
